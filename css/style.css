@@ -8,19 +8,19 @@ body {
 
 .center {
   margin: auto;
-  margin-top: 210px;
+  margin-top: 250px;
   width: 400px;
 }
 
 #txt {
   margin-left: 20px;
-  color: black;
+  color: white;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
 
 #time {
-  color: black;
+  color: white;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
@@ -41,13 +41,17 @@ body {
   background-image: url(../backgrounds/night.png);
 }
 
-#pajaro{
-	left:100%;
-	animation:volar 5s infinite;
-}
-
 .piopio{
 	position:relative;
+}
+#pajaro{
+	left:100%;
+	-moz-animation:volar 5s infinite;
+	-webkit-animation: volar 5s infinite;
+	-o-animation:volar 5s infinite;
+	-ms-animation:volar 5s infinite;
+	-khtml-animation:volar 5s infinite;
+	animation:volar 5s infinite;
 }
 
 @keyframes volar{
@@ -64,3 +68,4 @@ body {
 		left:-177px;
 		top:102px;
 	}
+}

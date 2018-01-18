@@ -5,20 +5,15 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('txt').innerHTML = "Goedemorgen!"
     document.getElementById('time').innerHTML = "het is nu " + h + ":" + m + ":" + s;
     var t  = setTimeout (startTime, 500);
 }
 
-  function time() {
-    if (date('h') == '14') {
-      document.getElementById('txt').innerHTML = "Goedemiddag!"
-    } else {
-
-    }
-  }
+  setTimeout(function(){
+   window.location.reload(1);
+}, 64525);
 
   function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
-  }
+}
