@@ -5,7 +5,7 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-
+    document.getElementById('txt').innerHTML = "Goedemorgen!"
     document.getElementById('time').innerHTML = "het is nu " + h + ":" + m + ":" + s;
     var t  = setTimeout (startTime, 500);
 }

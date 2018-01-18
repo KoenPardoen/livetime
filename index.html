@@ -1,24 +1,3 @@
-
-<?php
-date_default_timezone_set("Europe/Amsterdam");
-$t = date("h");
-
-if ($t < "12") {
-    $text = "Goedemorgen!";
-    $background = "morning";
-} elseif ($t < "18") {
-    $text = "Goedemiddag!";
-    $background = "afternoon";
-} elseif ($t < "00") {
-    $text = "Goedenavond!";
-    $background = "evening";
-} else {
-    $text = "Goedenacht!";
-    $background = "night";
-}
-
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,7 +10,7 @@ if ($t < "12") {
   <body id="<?php echo $background; ?>" onload="startTime()">
     <img class="piopio" id="pajaro" src="img/pajaro.gif" alt="vogel">
     <div class="center">
-      <span id="txt"><?php echo $text; ?></span><br>
+      <span id="txt"></span><br>
       <span id="time"></span>
     </div>
 
