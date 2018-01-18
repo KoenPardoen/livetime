@@ -1,0 +1,66 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.center {
+  margin: auto;
+  margin-top: 210px;
+  width: 400px;
+}
+
+#txt {
+  margin-left: 20px;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+}
+
+#time {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+}
+
+#morning {
+  background-image: url(../backgrounds/morning.png);
+}
+
+#afternoon{
+  background-image: url(../backgrounds/afternoon.png);
+}
+
+#evening {
+  background-image: url(../backgrounds/evening.png);
+}
+
+#night {
+  background-image: url(../backgrounds/night.png);
+}
+
+#pajaro{
+	left:100%;
+	animation:volar 5s infinite;
+}
+
+.piopio{
+	position:relative;
+}
+
+@keyframes volar{
+	0%{
+		left:100%;
+		top:5px;
+	}25%{
+		top:100px;
+	}50px{
+		top:80px;
+	}75%{
+		top:25px;
+	}100%{
+		left:-177px;
+		top:102px;
+	}
